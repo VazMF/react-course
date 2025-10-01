@@ -1,10 +1,7 @@
-export default function Tabs({ children, buttons, buttonsContainer }) {
-  // ou colocar a prop começando com upper
-  const ButtonContainer = buttonsContainer; 
-
+export default function Tabs({ children, buttons, ButtonsContainer = 'menu' }) {
   return (
     <>
-      <ButtonContainer>{buttons}</ButtonContainer>
+      <ButtonsContainer>{buttons}</ButtonsContainer>
       {children}
     </>
   );
